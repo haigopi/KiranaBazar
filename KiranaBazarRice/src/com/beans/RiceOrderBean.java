@@ -20,6 +20,15 @@ public class RiceOrderBean {
 	private String sn1;
 	private String sn2;
 
+	public String getName(){
+		return firstName+" "+lastName;
+	}
+	
+	public String getMessage(){
+		return "Build the oerder message with the below details.... Shipping to : gopi" + getAddress1() + getAddress2() + getCity()+ getState()+ getZip()
+				+ getCountry() + getBasmati() + getSn1()+getSn2();
+	}
+	
 	public String getCountry() {
 		return country;
 	}

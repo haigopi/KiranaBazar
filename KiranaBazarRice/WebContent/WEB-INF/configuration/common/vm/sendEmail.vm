@@ -8,7 +8,7 @@
 		<table border="0" width="100%" cellpadding="15" cellspacing="0">
 			<tr>
 				<td width="100%" style="color: #FFFFFF" align="right">
-				<b><font size="2">Notification from your Center Manager</font></b></td>
+				<b><font size="2">Notification from your KiranaBazar</font></b></td>
 			</tr>
 		</table>
 		</td>
@@ -19,7 +19,7 @@
 			<tr>
 				<td width="100%" height="100%" bgcolor="#946EA9">
 				<font color="#FFFFFF"><span style="font-weight: 700; ">
-				<font size="2">Dear Parent,</font></span><ul type="circle">
+				<font size="2">Dear ${notificationBean.name},</font></span><ul type="circle">
 					<li type="square"><font color="#FFFFFF" size="2">
 					<span style="line-height: 150%">${notificationBean.message}</span></font><font size="2"><span style="line-height: 150%">
 					</span></font></li>
@@ -34,7 +34,7 @@
 		<table border="0" width="100%" cellpadding="15" cellspacing="0">
 			<tr>
 				<td width="100%" style="color: #C0C0C0; font-size:8pt; font-family:Tahoma" align="center">
-				All Rights Reserved. A Product of AlliBilli.com</td>
+				All Rights Reserved. KiranaBazar.com</td>
 			</tr>
 		</table>
 		</td>

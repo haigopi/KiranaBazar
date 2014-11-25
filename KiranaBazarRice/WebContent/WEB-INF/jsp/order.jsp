@@ -7,21 +7,16 @@
         <script type="text/javascript" src="view.js"></script>
     </head>
     <body id="main_body">
-    <img border="0" src="KIRANABAZAR.png" width="650" height="80"/>
      
         <div id="form_container">
-            <h1>
-                <a href="#">TEST</a>
-            </h1>
+         
             <form id="form_935111" class="appnitro" method="post" action="riceOrder.order" name="kbForm">
+            <br>
                 <div class="form_description">
-                    <h2>Status Online Order - Just Rice</h2>
+                    <h2>Order Status - Just Rice</h2>
                     <p>Will now be delivered to your home.</p>
                 </div>
                 
-                    <li class="section_break">
-                    </li>
-                    
                     <a class="button_example" href="#">Thank you for your order. We started working on your order and we will keep posting you about the status changes.</a>
                 </ul>
             </form>
