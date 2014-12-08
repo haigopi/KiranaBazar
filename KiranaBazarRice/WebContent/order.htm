@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title> Order Rice Online </title>
+
+    <link rel="stylesheet" href="formoid_files/formoid1/formoid-biz-blue.css" type="text/css" />
+    <script type="text/javascript" src="formoid_files/formoid1/jquery.min.js"></script>
+
+</head>
+
+<body class="blurBg-true" style="background-color:#ffffff">
+
+
+
+
+
+    <!-- Start Formoid form-->
+
+    <form class="formoid-biz-blue" action="riceOrder.order" style="background-color:#1A2223;font-size:14px;font-family:'Open Sans','Helvetica Neue', 'Helvetica', Arial, Verdana, sans-serif;color:#ECECEC;max-width:500px;min-width:150px" method="post">
+        <div class="title">
+            <h2>Order Rice Online - Cash On Delivery</h2>
+        </div>
+        <div class="element-checkbox" title="-- Choose the Rice You Want --">
+            <label class="title">-- Choose the Rice You Want --<span class="required">*</span>
+            </label>
+            <div class="column column1">
+                <label>
+                    <input type="checkbox" name="checkbox[]" value="Basmati - 25 Kg - Rs 1200" required="required"><span>Basmati - 25 Kg - Rs 1200</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox[]" value="Sona Masoori 25 Kg - Grade 1 - Rs 1400" required="required"><span>Sona Masoori 25 Kg - Grade 1 - Rs 1400</span>
+                </label>
+                <label>
+                    <input type="checkbox" name="checkbox[]" value="Sona Masoori 25 Kg - Grade 2 - Rs 1600" required="required"><span>Sona Masoori 25 Kg - Grade 2 - Rs 1600</span>
+                </label>
+            </div><span class="clearfix"></span>
+        </div>
+        <div class="element-separator">
+            <hr>
+            <h3 class="section-break-title"></h3>
+        </div>
+        <div class="element-input" title="FirstName, Last Name" style="white-space: nowrap;">
+            <input class="large" type="text" name="input" required="required" placeholder="FirstName, Last Name" />&nbsp;&nbsp;<span class="required">*</span>
+        </div>
+        <div class="element-email" title="Email">
+            
+            <input class="null" type="email" name="email" value="" required="required" placeholder="Email" />&nbsp;&nbsp;<span class="required">*</span>
+        </div>
+        <div class="element-phone" title="Mobile Number">
+            <input class="null" type="tel" pattern="null" maxlength="24" name="phone" placeholder="Mobile Number" value="" required="required"/>&nbsp;&nbsp;<span class="required">*</span>
+        </div>
+        <div class="element-phone" title="Alternate Number">
+           
+            <input class="null" type="tel" pattern="null" maxlength="24" name="phone1" placeholder="Alternate Number" value="" />
+        </div>
+        <div class="element-separator">
+            <hr>
+            <h3 class="section-break-title"></h3>
+        </div>
+        <div class="element-address" title="Delivery Address">
+            <label class="title"><span class="required">*</span>
+            </label><span class="addr1"><input placeholder="Street Address" type="text" name="address[addr1]" required="required"/></span><span class="addr2"><input placeholder="Address Line 2" type="text" name="address[addr2]" /></span><span class="city"><input placeholder="City" type="text" name="address[city]" /></span><span class="state"><input placeholder="State / Province / Region" type="text" name="address[state]" required="required"/></span><span class="zip"><input placeholder="Postal / Zip Code" type="text" maxlength="15" name="address[zip]" required="required"/></span><div class="country"><select name="address[country]" required="required"><option value="India" selected="selected">India</option></select></div>
+            
+        </div>
+        <div class="element-separator">
+            <hr>
+            <h3 class="section-break-title"></h3>
+        </div>
+    
+        <div class="element-recaptcha">
+            <label class="title"></label>
+            <script type="text/javascript">
+                var RecaptchaOptions = {
+                    theme: "clean"
+                };
+            </script>
+            <script type="text/javascript" src="http://www.google.com/recaptcha/api/challenge?k=6LdK8v4SAAAAAKTRVUIO-ZUK0SqcjkSafURq11im&theme=clean"></script>
+            <noscript>
+                <iframe src="http://www.google.com/recaptcha/api/noscript?k=6LdK8v4SAAAAAKTRVUIO-ZUK0SqcjkSafURq11im&hl=en" height="300" width="500" frameborder="0"></iframe>
+                </br>
+                <textarea name="recaptcha_challenge_field" rows="3" cols="40"></textarea>
+                <input type="hidden" name="recaptcha_response_field" value="manual_challenge">
+            </noscript>
+            <script type="text/javascript">
+                if (/#invalidcaptcha$/.test(window.location))(document.getElementById("recaptcha_widget_div")).className += " error"
+            </script>
+        </div>
+        <div class="submit">
+            <input type="submit" value="Place Order" />
+        </div>
+    </form>
+    <script type="text/javascript" src="formoid_files/formoid1/formoid-biz-blue.js"></script>
+
+
+
+
+
+</body>
+
+</html>
