@@ -1,15 +1,10 @@
 package com.beans;
 
 public class RiceOrderBean {
-	private String firstName;
-	private String lastName;
+	private String name;
 	private String email;
-	private String mobileNumber_1;
-	private String mobileNumber_2;
-	private String mobileNumber_3;
-	private String alternateNumber_1;
-	private String alternateNumber_2;
-	private String alternateNumber_3;
+	private String mobileNumber;
+	private String alternateNumber;
 	private String address1;
 	private String address2;
 	private String city;
@@ -20,37 +15,17 @@ public class RiceOrderBean {
 	private String sn1;
 	private String sn2;
 
-	public String getName(){
-		return firstName+" "+lastName;
-	}
-	
-	public String getMessage(){
-		return "Build the oerder message with the below details.... Shipping to : gopi" + getAddress1() + getAddress2() + getCity()+ getState()+ getZip()
-				+ getCountry() + getBasmati() + getSn1()+getSn2();
-	}
-	
-	public String getCountry() {
-		return country;
+	public String getMessage() {
+		return "Build the oerder message with the below details.... Shipping to : gopi" + getAddress1() + getAddress2() + getCity()
+				+ getState() + getZip() + getCountry() + getBasmati() + getSn1() + getSn2();
 	}
 
-	public void setCountry(String country) {
-		this.country = country;
+	public String getName() {
+		return name;
 	}
 
-	public String getFirstName() {
-		return firstName;
-	}
-
-	public void setFirstName(String firstName) {
-		this.firstName = firstName;
-	}
-
-	public String getLastName() {
-		return lastName;
-	}
-
-	public void setLastName(String lastName) {
-		this.lastName = lastName;
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public String getEmail() {
@@ -62,59 +37,19 @@ public class RiceOrderBean {
 	}
 
 	public String getMobileNumber() {
-		return mobileNumber_1 + mobileNumber_2 + mobileNumber_3;
+		return mobileNumber;
+	}
+
+	public void setMobileNumber(String mobileNumber) {
+		this.mobileNumber = mobileNumber;
 	}
 
 	public String getAlternateNumber() {
-		return alternateNumber_1 + alternateNumber_2 + alternateNumber_3;
+		return alternateNumber;
 	}
 
-	public String getAlternateNumber_1() {
-		return alternateNumber_1;
-	}
-
-	public void setAlternateNumber_1(String alternateNumber_1) {
-		this.alternateNumber_1 = alternateNumber_1;
-	}
-
-	public String getAlternateNumber_2() {
-		return alternateNumber_2;
-	}
-
-	public void setAlternateNumber_2(String alternateNumber_2) {
-		this.alternateNumber_2 = alternateNumber_2;
-	}
-
-	public String getAlternateNumber_3() {
-		return alternateNumber_3;
-	}
-
-	public void setAlternateNumber_3(String alternateNumber_3) {
-		this.alternateNumber_3 = alternateNumber_3;
-	}
-
-	public String getMobileNumber_1() {
-		return mobileNumber_1;
-	}
-
-	public void setMobileNumber_1(String mobileNumber_1) {
-		this.mobileNumber_1 = mobileNumber_1;
-	}
-
-	public String getMobileNumber_2() {
-		return mobileNumber_2;
-	}
-
-	public void setMobileNumber_2(String mobileNumber_2) {
-		this.mobileNumber_2 = mobileNumber_2;
-	}
-
-	public String getMobileNumber_3() {
-		return mobileNumber_3;
-	}
-
-	public void setMobileNumber_3(String mobileNumber_3) {
-		this.mobileNumber_3 = mobileNumber_3;
+	public void setAlternateNumber(String alternateNumber) {
+		this.alternateNumber = alternateNumber;
 	}
 
 	public String getAddress1() {
@@ -155,6 +90,14 @@ public class RiceOrderBean {
 
 	public void setZip(String zip) {
 		this.zip = zip;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(String country) {
+		this.country = country;
 	}
 
 	public String getBasmati() {
