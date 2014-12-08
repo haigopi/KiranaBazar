@@ -14,10 +14,19 @@ public class RiceOrderBean {
 	private String basmati;
 	private String sn1;
 	private String sn2;
+	private String rice;
 
 	public String getMessage() {
-		return "Build the oerder message with the below details.... Shipping to : gopi" + getAddress1() + getAddress2() + getCity()
-				+ getState() + getZip() + getCountry() + getBasmati() + getSn1() + getSn2();
+		return "Order Ship to : " +getAddress1() + ", " + getAddress2() + ", " +  getCity()
+				+ ", " +  getState() + ", " +  getZip() + ", " +  getCountry() + ".  <br> Order Details : " +  getRice();
+	}
+
+	public String getRice() {
+		return rice;
+	}
+
+	public void setRice(String rice) {
+		this.rice = rice;
 	}
 
 	public String getName() {
